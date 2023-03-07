@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <style>
+        /*table {*/
+        /*    text-align: center;*/
+        /*    border-spacing: 20px; !* cell between cell *!*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--    Table > caption thead tbody tfoot > tr > th + td -->
+<!--    align border width height rowspan colspan -->
+    <table border="1" width="300px" height="200px" align="center">
+        <tr>
+            <td rowspan="2">a</td>
+            <td>b</td>
+            <td colspan="2">c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tfoot>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+        <thead>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </thead>
+    </table>
+
+    <table border="1">
+        <caption>我是標題</caption>
+        <tr>
+            <td>111</td>
+            <td>222</td>
+            <td>333</td>
+        </tr>
+        <tr>
+            <td>444</td>
+            <td>555</td>
+            <td>666</td>
+        </tr>
+    </table>
+</body>
+</html>

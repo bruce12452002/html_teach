@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+<!--    Form action method, action 可寫本頁檔名-->
+<!--    Input type [text | password | submit | radio | checkbox | checked | name | value | file | button | reset | email | size | max length | readonly | disabled | required | placeholder]-->
+<!--        search 輸入後，輸入框最後會有一個 x 鈕-->
+<!--        range 會出現一個類似聲音變大變小的左右拖曳的控制鈕-->
+<!--        autocomplete 要配合 submit 和 name，提交後下次再輸入會有提示-->
+<!--        accesskey 按下 alt+設定的值可以有焦點-->
+<!--        number 數字和最多一個小數點-->
+<!--        tel -->
+<!--        date | time | datetime-->
+<!--    Label for="id" 點擊字也能有效果-->
+
+<!--    Select > option[selected]-->
+<!--    Textarea rows cols-->
+
+<!--    input list=id 指定 datalist 的 id，可以有尋找 google 時的下拉效果 -->
+<!--    datalist > option-->
+
+<!--    fieldset > legend 會將 legend 裡的文字包一圈，可以有一組的效果-->
+
+    <form method="get" action="" autocomplete="on"> <!-- method 預設就是 get； action 為提交到伺服器的位址 -->
+        <fieldset>
+            <legend>input 測試</legend>
+            <input type="text" value="hahaha" size="50px" />文字1<br /> <!-- type 預設就是 text-->
+            <input type="text" placeholder="請輸入" maxlength="5" />文字2<br />
+            <input type="password" />密碼<br />
+            <input type="button" value="按我" />按鈕<br />
+            <input type="hidden" value="看不到我吧！" />隱藏<br />
+            <input type="file" multiple="multiple" /><br /><!-- multiple 可上傳多個檔案 -->
+
+            <h3>多選一</h3>
+            <!-- 多選一以相同的 name 為一組 -->
+            <input type="radio" name="r" required="required" />男<br />
+            <input type="radio" name="r" required="required" />女<br />
+
+            <input type="checkbox" name="c" />蘋果<br />
+            <input type="checkbox" name="c" checked="checked" />香蕉<br />
+            <input type="checkbox" name="c" id="pineapple" /><label for="pineapple">壞掉的蘋果</label><br />
+            <label><input type="checkbox" name="c" />釋迦</label><br />
+
+            <input type="number" />數字<br />
+            <input type="tel" />電話<br />
+            <input type="email" required="required" />郵件<br />
+            <input type="search" />尋找<br />
+            <input type="range" />範圍<br />
+            <input list="ls" />列表下拉<br />
+            <datalist id="ls">
+                <option>monkey</option>
+                <option>rat</option>
+                <option>cat</option>
+                <option>pig</option>
+                <option>rabbit</option>
+                <option>dragon</option>
+                <option>duck</option>
+                <option>dog</option>
+            </datalist>
+
+            <h3>日期</h3>
+            <input type="date" />年月日
+            <input type="time" />時分
+            <input type="datetime-local" />年月日時分<br />
+            <input type="month" />年月<br />
+            <input type="week" />年週<br />
+
+            <input type="reset" /> <!-- value 可修改預設文字 -->
+
+            <select>
+                <option value="a">a</option>
+                <option value="b" selected>b</option>
+                <option value="c">c</option>
+            </select>
+
+            <textarea rows="10" cols="5">內容</textarea>
+
+            <!-- readonly disabled 都不能輸入，但 readonly 可傳到伺服器； disabled 不能(就算有預設值也不能) -->
+            <input type="submit" /> <!-- value 可修改預設文字，提交時會將 name 傳給伺服器 -->
+        </fieldset>
+    </form>
+</body>
+</html>

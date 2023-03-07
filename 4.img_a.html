@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖、超連結</title>
+
+    <!-- 使所有超連結「預設」都會產生新窗口-->
+<!--    <base target="_blank" /> -->
+</head>
+<body>
+    <a href="#yeah">#連接</a> 注意開頭為 # 號，可以連 id，如果沒有 # 號，會是此頁的下一層路徑
+    <br />
+    <a href="http://www.google.com">click me1</a>
+    <br />
+    <a href="http://www.google.com" target="_self">click me2</a> <!-- target 預設就是 _self -->
+    <br />
+    <a href="http://www.google.com" target="_blank">按我</a> <!-- target 給 _blank 可以開出一個新視窗 -->
+<!--    a 還有滑鼠事件，也很重要，滑鼠經過、未點擊、點擊當下、點擊後，到 CSS 再寫範例-->
+    <br />
+    <img src="image/1.jpg" alt="顯示不出來才會出現" title="一巴掌" /> src 可用絕對路徑、相對路徑、上一層 ..
+    <img src="image/10.jpg" alt="顯示不出來才會出現" title="一巴掌" />
+    <img src="/Users/bruce/IdeaProjects/h5/image/1.jpg" /> <!-- 注意上版時有上版時的路徑 -->
+    <br />
+    <p id="yeah">我是 p</p>
+</body>
+</html>

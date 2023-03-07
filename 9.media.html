@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+    https://www.w3schools.com/html/html5_video.asp
+    目前支援 mp4、webm、ogg 三種格式
+
+    <!-- controls 是否顯示控制器； loop autoplay -->
+    如果瀏覽器不支援某些格式，就換下一個，如下寫法
+    <video width="600" height="400" autoplay muted controls>
+        <source src="media/picachu.mp4" type="video/mp4">
+        <source src="media/picachu.ogg" type="video/ogg">
+        瀏覽器不支援影片
+    </video>
+    <br />
+
+    https://www.w3schools.com/html/html5_audio.asp
+    目前支援 mp3 wav ogg 三種格式
+    <!-- audio 類似 video，差在只有聲音-->
+    <audio controls autoplay muted>
+        <source src="media/open.wav" type="audio/mp3">
+        <source src="media/open.ogg" type="audio/ogg">
+        瀏覽器不支援音樂
+    </audio>
+</body>
+</html>
