@@ -10,19 +10,20 @@
 <!--    <base target="_blank" /> -->
 </head>
 <body>
-    a = anchor
-    href = hypertext reference
+    <!-- a = anchor -->
+    <!-- href = hypertext reference -->
+    <br />
     <a href="#yeah">#連接</a> 注意開頭為 # 號，可以連 id，如果沒有 # 號，會是此頁的下一層路徑
     <br />
     <a href="http://www.google.com">click me1</a>
     <br />
-    <a href="http://www.google.com" target="_self">click me2</a> <!-- target 預設就是 _self -->
+    <a href="http://www.google.com" target="_self"></a> <!-- target 預設就是 _self -->
     <br />
     <a href="http://www.google.com" target="_blank">按我</a> <!-- target 給 _blank 可以開出一個新視窗 -->
 <!--    a 還有滑鼠事件，也很重要，滑鼠經過、未點擊、點擊當下、點擊後，到 CSS 再寫範例-->
     <br />
     <img src="image/1.jpg" alt="顯示不出來才會出現" title="一巴掌" /> src 可用絕對路徑、相對路徑、上一層 ..
-    <img src="image/10.jpg" />
+    <img src="image/10.jpg" alt="顯示不出來才會出現" title="一巴掌" /> 圖片顯示不出來時，會抓 alt 屬性，沒有會抓 title 屬性，都沒有就不顯示
     <img src="/Users/bruce/IdeaProjects/h5/image/1.jpg" /> <!-- 注意上版時有上版時的路徑 -->
     <br />
     <p id="yeah">我是 p</p>
